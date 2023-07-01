@@ -1,9 +1,12 @@
 const mongoose = require("mongoose");
 
 // connecting mongoose to its default server and ecommerceDB
-mongoose.connect("mongodb://0.0.0.0/27017/EcommerceAPI", {
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  "mongodb+srv://sagararor403:WIBE6uuze1OQ6rBJ@cluster0.bhij0ru.mongodb.net/?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+  }
+);
 
 const db = mongoose.connection;
 
